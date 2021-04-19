@@ -1,0 +1,20 @@
+NameOfChest: 'CustomChest'
+Command: '/chest'
+PriceOf1Row: 255.0
+PriceOf2Row: 300.0
+PriceOf3Row: 500.0
+PriceOf4Row: 800.0
+PriceOf5Row: 900.0
+PriceOf6Row: 1200.0
+
+NumberOfRow: 3
+
+PermissionMessage: 'Not Enought Permission'
+Prefix: '[CustomChest]'
+EnablePrefix: true
+NotEnoughtMoney: 'You dont have enought money to buy this'
+BoughtRowMessage: 'You just bought a row in your chest'
+
+UseAsEnderChest: false
+
+ 
