@@ -1,8 +1,8 @@
 # CustomChest
 En cour de développement 
 
-ne pas prendre en compte le nombre d'erreur dans le code il a été faisil y a longtemps je le retravaille pour le rendre public et utilisable par tous.
+Dev toujours en cours
 
-Plugin de chest comme le kchest de faction personnalisable
+Plugin de chest comme le kchest de kfaction personnalisable
 
 Fichier de config disponible et il sera compatible pour la 1.7 et la 1.8
