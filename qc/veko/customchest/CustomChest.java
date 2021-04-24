@@ -11,6 +11,8 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import qc.veko.customchest.commands.ChestCommand;
 import qc.veko.customchest.inventory.ChestInventory;
+import qc.veko.customchest.listener.AdminInventoryListener;
+import qc.veko.customchest.listener.InventoryListener;
 import qc.veko.customchest.manager.ChestFileManager;
 import qc.veko.customchest.manager.ConfigManager;
 
@@ -35,9 +37,12 @@ public class CustomChest extends JavaPlugin {
 
     public void onEnable() {
         instance = this;
+        this.saveDefaultConfig();
         configManager.loadConfig();
 
         Bukkit.getPluginManager().registerEvents(new ChestCommand(), this);
+        Bukkit.getPluginManager().registerEvents(new InventoryListener(), this);
+        Bukkit.getPluginManager().registerEvents(new AdminInventoryListener(), this);
 
         Bukkit.getScheduler().runTaskTimer(this, this::save, 0, 20 * (60 * 30));
     }
@@ -58,13 +63,18 @@ public class CustomChest extends JavaPlugin {
 
     private void save() {
         configManager.getLevel().forEach(chestLevelFile::set);
-        chestMap.forEach((name, items) ->{
+        getChestMap().forEach((name, items) ->{
             try {
                 chestFileManager.action_save(name, items);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         });
+        try {
+            getChestLevelFile().save(getChestLevel());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

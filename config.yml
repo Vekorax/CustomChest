@@ -12,9 +12,10 @@ NumberOfRow: 3
 PermissionMessage: 'Not Enought Permission'
 Prefix: '[CustomChest]'
 EnablePrefix: true
-NotEnoughtMoney: 'You dont have enought money to buy this'
+NotEnoughMoney: 'You dont have enought money to buy this'
 BoughtRowMessage: 'You just bought a row in your chest'
-
+PlayerDoesNotHaveChest: "this player do not have any saved chest"
+ReloadMessage: "The config is being reloaded"
 UseAsEnderChest: false
 
  

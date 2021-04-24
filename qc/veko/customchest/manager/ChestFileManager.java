@@ -12,7 +12,7 @@ import java.io.IOException;
 public class ChestFileManager {
 
     public void action_save(String player, ItemStack[] content) throws IOException {
-        File file = new File(CustomChest.getInstance().getDataFolder() + "chest/" + player + ".yml");
+        File file = new File("plugins/CustomChest/chest/" + player + ".yml");
         FileConfiguration config = YamlConfiguration.loadConfiguration(file);
         config.createSection(player);
         for (int i = 0; i < content.length; i++) {
