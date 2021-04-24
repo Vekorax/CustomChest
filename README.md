@@ -14,6 +14,6 @@ Commandes disponible :
 
 /(commande dans la config) : vous permet d'ouvrir votre coffre personnaliser
 
-You need vault and essentials for it to work
+Vous avez besoin de vault pour que ce plugin fonctionne
 
 Fichier de config disponible et il sera compatible pour la 1.7 et la 1.8
