@@ -9,7 +9,7 @@ Commandes disponible :
 
 /(commande dans la config) reload : vous permet de reload la config sans redémarrer le serveur
 
-/(commande dans la config) <joueur> : vous permet de modifier le coffre d'un joueur
+/(commande dans la config) [joueur] : vous permet de modifier le coffre d'un joueur
   
 ***Permission : chest.use***
 
