@@ -56,4 +56,8 @@ public class ConfigManager {
         return text;
     }
 
+    public boolean getUseAsEnderChest(){
+        return useAsEnderChest;
+    }
+
 }
